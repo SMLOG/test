@@ -3,4 +3,4 @@
 cp -a ../my-extension3/dist/* ./
 git add .
 git commit -am 'update'
-while ! git push ; do ech 'lll';done;
+while ! git push ; do echo 'lll';done;
