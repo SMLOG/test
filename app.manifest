@@ -1,0 +1,9 @@
+CACHE MANIFEST
+#version 1.0.1
+
+CACHE:
+    03html5-lixianfangwen.html
+    lixian.css
+    lixian.js
+NETWORK:
+    *
