@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://streaming-ent.shoutcast.com/foxnews",
+    "title": "Fox News Radio"
+  },
+  {
+    "url": "https://prod-54-90-102-31.wostreaming.net/sinclair-komoamaac-hlsc2.m3u8",
+    "title": "KOMO News Radio"
+  },
+  {
+    "url": "https://voa-ingest.akamaized.net/dash/live/2035100-b/161_352R/manifest.mpd",
+    "title": "Voice of America (VOA 美国之音)"
+  },
+  {
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CSPANRADIO.mp3",
+    "title": "C-SPAN Radio Live Stream"
+  },
+  {
+    "url": "https://live-radio01.mediahubaustralia.com/PBW/mp3/",
+    "title": "ABC- Australian NewsRadio"
+  },
+  {
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_world_service",
+    "title": "BBC World Service"
+  },
+  {
+    "url": "https://stream-kiss.planetradio.co.uk/kissnational.aac",
+    "title": "KISS FM UK"
+  },
+  {
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_6music",
+    "title": "BBC Radio 6 Music"
+  },
+  {
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra",
+    "title": "BBC Radio 4 Extra"
+  },
+  {
+    "url": "https://stream.live.vc.bbcmedia.co.uk/bbc_1xtra",
+    "title": "BBC Radio 1Xtra"
+  },
+  {
+    "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/WBBRAMAAC.aac",
+    "title": "Bloomberg Radio"
+  },
+  {
+    "url": "https://wrau.streamguys1.com/msnbc-free",
+    "title": "MSNBC News Radio"
+  },
+  {
+    "url": "https://npr-ice.streamguys1.com/live.mp3",
+    "title": "NPR - National Public Radio"
+  },
+  {
+    "url": "http://stream.abacast.net/direct/espn-networkmp3-48",
+    "title": "ESPN Radio"
+  }
+]
