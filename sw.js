@@ -1,4 +1,5 @@
-const cacheName = "v2"; // Cahce Stroage 白名单
+const cacheName = "v3"; // Cahce Stroage 白名单
+const offlineUrl = "index.html";
 
 this.addEventListener("install", function (event) {
   console.log("install");
@@ -6,12 +7,13 @@ this.addEventListener("install", function (event) {
     caches.open(cacheName).then(function (cache) {
       // 更换 Cache Stroage
       return cache.addAll([
-        "/js/chunk-common.js",
-        "/css/chunk-common.css",
-        "/js/index.js",
-        "/css/index.css",
-        "/css/chunk-vendors.css",
+        "js/chunk-common.js",
+        "css/chunk-common.css",
+        "js/index.js",
+        "css/index.css",
+        "css/chunk-vendors.css",
         "js/chunk-vendors.js",
+        "media/3s.mp3",
         offlineUrl,
       ]);
     })
@@ -32,8 +34,6 @@ this.addEventListener("activate", function (event) {
     })
   );
 });
-
-const offlineUrl = "index.html";
 
 this.addEventListener("fetch", (event) => {
   if (
