@@ -50,11 +50,13 @@ this.addEventListener("fetch", (event) => {
     );
   } else {
     event.respondWith(
-      caches
-        .match(event.request, { ignoreVary: true })
-        .then(function (response) {
-          return response || fetch(event.request);
-        })
+      caches.open(cacheName).then(function (cache) {
+        cache
+          .match(event.request, { ignoreVary: true, ignoreSearch: true })
+          .then(function (response) {
+            return response || fetch(event.request);
+          });
+      })
     );
   }
 });
