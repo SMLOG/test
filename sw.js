@@ -51,7 +51,7 @@ this.addEventListener("fetch", (event) => {
   } else {
     event.respondWith(
       caches.open(cacheName).then(function (cache) {
-        cache
+        return cache
           .match(event.request, { ignoreVary: true, ignoreSearch: true })
           .then(function (response) {
             return response || fetch(event.request);
