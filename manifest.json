@@ -34,7 +34,7 @@
         "http://*/*",
         "https://*/*"
       ],
-      "all_frames": true
+      "all_frames": false
     }
   ],
   "browser_action": {
