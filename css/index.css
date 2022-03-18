@@ -96,6 +96,8 @@ table tr[data-v-488dd9a2]:nth-child(even) {
   position: fixed;
   right: 0;
   z-index: 10001 !important;
+  padding: 0;
+  margin: 0;
 }
 .column[data-v-7b6bfbb6] {
   display: block;
@@ -327,6 +329,11 @@ table tr[data-v-293a9583]:nth-child(even) {
 }
 .green[data-v-a42b2332] {
   color: lightgreen;
+}
+label[data-v-a42b2332] {
+  display: inline-block;
+  border-bottom: 1px solid white;
+  margin-right: 5px;
 }
 #root[data-v-7ba5bd90] {
   font-family: Avenir, Helvetica, Arial, sans-serif;
