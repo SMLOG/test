@@ -13,7 +13,6 @@ this.addEventListener("install", function (event) {
         "css/index.css",
         "css/chunk-vendors.css",
         "js/chunk-vendors.js",
-        "media/3s.mp3",
         offlineUrl,
       ]);
     })
@@ -37,9 +36,9 @@ this.addEventListener("activate", function (event) {
 
 this.addEventListener("fetch", (event) => {
   if (
-    event.request.mode === "navigate" ||
-    (event.request.method === "GET" &&
-      event.request.headers.get("accept").includes("text/html"))
+    event.request.mode === "navigate" &&
+    event.request.method === "GET" &&
+    event.request.headers.get("accept").includes("text/html")
   ) {
     event.respondWith(
       fetch(event.request.url).catch((error) => {
@@ -48,7 +47,7 @@ this.addEventListener("fetch", (event) => {
         return caches.match(offlineUrl);
       })
     );
-  } else {
+  } /* else {
     event.respondWith(
       caches.open(cacheName).then(function (cache) {
         return cache
@@ -58,5 +57,5 @@ this.addEventListener("fetch", (event) => {
           });
       })
     );
-  }
+  }*/
 });
