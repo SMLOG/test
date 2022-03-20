@@ -1,4 +1,4 @@
-const cacheName = "v2"; // Cahce Stroage 白名单
+const cacheName = "v3"; // Cahce Stroage 白名单
 const offlineUrl = "index.html";
 
 this.addEventListener("install", function (event) {
@@ -54,6 +54,90 @@ this.addEventListener("fetch", (event) => {
           .match(event.request, { ignoreVary: true, ignoreSearch: true })
           .then(function (response) {
             return response || fetch(event.request);
+          });
+      })
+    );
+  } else if (
+    event.request.url.indexOf(".ts") > -1 ||
+    event.request.url.indexOf(".adb_xml") > -1
+  ) {
+    event.respondWith(
+      caches.open(cacheName).then(function (cache) {
+        return cache
+          .match(event.request, { ignoreVary: true, ignoreSearch: true })
+          .then(function (response) {
+            return (
+              response ||
+              fetch(event.request).then(function (response) {
+                // Cache for offline access
+                var copy = response.clone();
+                copy.ok &&
+                  event.waitUntil(
+                    caches.open(cacheName).then(function (cache) {
+                      var headers = new Headers(copy.headers);
+                      headers.append("sw-fetched-on", new Date().getTime());
+                      return copy.blob().then(function (body) {
+                        return cache.put(
+                          event.request,
+                          new Response(body, {
+                            status: copy.status,
+                            statusText: copy.statusText,
+                            headers: headers,
+                          })
+                        );
+                      });
+                    })
+                  );
+
+                // Return the requested file
+                return response;
+              })
+            );
+          });
+      })
+    );
+  } else if (event.request.url.indexOf(".m3u8") > -1) {
+    event.respondWith(
+      caches.open(cacheName).then(function (cache) {
+        return cache
+          .match(event.request, { ignoreVary: true, ignoreSearch: true })
+          .then(function (response) {
+            return (
+              response ||
+              fetch(event.request).then(function (response) {
+                // Cache for offline access
+                var copy = response.clone();
+                copy.ok &&
+                  response
+                    .clone()
+                    .text()
+                    .then((data) => {
+                      if (data.indexOf("#EXT-X-ENDLIST") > -1)
+                        event.waitUntil(
+                          caches.open(cacheName).then(function (cache) {
+                            var headers = new Headers(copy.headers);
+                            headers.append(
+                              "sw-fetched-on",
+                              new Date().getTime()
+                            );
+                            return copy.blob().then(function (body) {
+                              return cache.put(
+                                event.request,
+                                new Response(body, {
+                                  status: copy.status,
+                                  statusText: copy.statusText,
+                                  headers: headers,
+                                })
+                              );
+                            });
+                          })
+                        );
+                    });
+
+                // Return the requested file
+                return response;
+              })
+            );
           });
       })
     );
