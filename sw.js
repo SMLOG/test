@@ -1,4 +1,4 @@
-const cacheName = "v3"; // Cahce Stroage 白名单
+const cacheName = "v2"; // Cahce Stroage 白名单
 const offlineUrl = "index.html";
 
 this.addEventListener("install", function (event) {
@@ -47,7 +47,18 @@ this.addEventListener("fetch", (event) => {
         return caches.match(offlineUrl);
       })
     );
-  } /* else {
+  } else if (event.request.url.indexOf(".js?") > -1) {
+    event.respondWith(
+      caches.open(cacheName).then(function (cache) {
+        return cache
+          .match(event.request, { ignoreVary: true, ignoreSearch: true })
+          .then(function (response) {
+            return response || fetch(event.request);
+          });
+      })
+    );
+  }
+  /* else {
     event.respondWith(
       caches.open(cacheName).then(function (cache) {
         return cache
