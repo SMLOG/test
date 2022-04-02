@@ -1,4 +1,4 @@
-const cacheName = "v7"; // Cahce Stroage 白名单
+const cacheName = "v8"; // Cahce Stroage 白名单
 const offlineUrl = "index.html";
 
 this.addEventListener("install", function (event) {
@@ -45,16 +45,6 @@ this.addEventListener("fetch", (event) => {
         // Return the offline page
         console.error(error);
         return caches.match(offlineUrl);
-      })
-    );
-  } else if (event.request.url.indexOf(".js?") > -1) {
-    event.respondWith(
-      caches.open(cacheName).then(function (cache) {
-        return cache
-          .match(event.request, { ignoreVary: true, ignoreSearch: true })
-          .then(function (response) {
-            return response || fetch(event.request);
-          });
       })
     );
   } else if (
