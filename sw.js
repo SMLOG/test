@@ -1,20 +1,19 @@
-const cacheName = "v8"; // Cahce Stroage 白名单
+const cacheName = "v9"; // Cahce Stroage 白名单
 const offlineUrl = "index.html";
-
+const cacheList = [
+  "js/chunk-common.js",
+  "css/chunk-common.css",
+  "js/index.js",
+  "css/index.css",
+  "css/chunk-vendors.css",
+  "js/chunk-vendors.js",
+];
 this.addEventListener("install", function (event) {
   console.log("install");
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
       // 更换 Cache Stroage
-      return cache.addAll([
-        "js/chunk-common.js",
-        "css/chunk-common.css",
-        "js/index.js",
-        "css/index.css",
-        "css/chunk-vendors.css",
-        "js/chunk-vendors.js",
-        offlineUrl,
-      ]);
+      return cache.addAll(cacheList.concat([offlineUrl]));
     })
   );
 });
@@ -35,7 +34,10 @@ this.addEventListener("activate", function (event) {
 });
 
 this.addEventListener("fetch", (event) => {
-  if (
+  let matchCaches = cacheList.filter((e) => event.request.url.indexOf(e) > -1);
+  if (matchCaches.length > 0) {
+    event.respondWith(caches.match(matchCaches[0]));
+  } else if (
     event.request.mode === "navigate" &&
     event.request.method === "GET" &&
     event.request.headers.get("accept").includes("text/html")
