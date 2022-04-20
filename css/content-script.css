@@ -104,30 +104,30 @@ select[data-v-32cb7a07] {
 }
 
 
-p[data-v-6e50a7eb] {
+p[data-v-1332b2ac] {
   font-size: 20px;
 }
-table tr[data-v-6e50a7eb]:nth-child(odd) {
+table tr[data-v-1332b2ac]:nth-child(odd) {
   background-color: #f5f5f5;
 }
-table tr[data-v-6e50a7eb]:nth-child(even) {
+table tr[data-v-1332b2ac]:nth-child(even) {
   background-color: #fff;
 }
-.ctrl[data-v-6e50a7eb] {
+.ctrl[data-v-1332b2ac] {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
 }
-.ni[data-v-6e50a7eb] {
+.ni[data-v-1332b2ac] {
   color: gray;
 }
-.cur[data-v-6e50a7eb] {
+.cur[data-v-1332b2ac] {
   color: red;
 }
-.list[data-v-6e50a7eb] .src,
-.list[data-v-6e50a7eb] .num {
+.list[data-v-1332b2ac] .src,
+.list[data-v-1332b2ac] .num {
   color: gray;
   font-size: 0.8em;
   display: inline-block;
