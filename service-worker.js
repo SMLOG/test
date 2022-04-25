@@ -17,7 +17,7 @@ importScripts(
   "precache-manifest.js?_v=870d42406272213b6d5be017dabe759a"
 );
 
-workbox.core.setCacheNameDetails({prefix: "my-new-word-tran"});
+workbox.core.setCacheNameDetails({prefix: "my"});
 
 workbox.core.skipWaiting();
 
