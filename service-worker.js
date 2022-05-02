@@ -34,6 +34,7 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 workbox.routing.registerRoute(/.*?index.html/, new workbox.strategies.NetworkFirst({ "cacheName":"index","networkTimeoutSeconds":5, plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/.*?workbox.*?\.js$/, new workbox.strategies.CacheFirst({ "cacheName":"cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/.*?(js|css|\/video|\/media).*/, new workbox.strategies.CacheFirst({ "cacheName":"cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 200 ] })] }), 'GET');
+workbox.routing.registerRoute(/.*?\.mp3/, new workbox.strategies.CacheFirst({ "cacheName":"mp3", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/.*?\.(vtt|db_xml)/, new workbox.strategies.CacheFirst({ "cacheName":"cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/.*?baidu.*/, new workbox.strategies.CacheFirst({ "cacheName":"cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
 workbox.routing.registerRoute(/.*?\?cache=\d+$/, new workbox.strategies.CacheFirst({ "cacheName":"cache", plugins: [new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] }), new workbox.expiration.Plugin({ maxAgeSeconds: 1209600, maxEntries: 100, purgeOnQuotaError: false })] }), 'GET');
