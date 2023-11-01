@@ -1029,17 +1029,17 @@ table tr[data-v-5a4a6242]:nth-child(even) {
 .fs-1{
     font-size:1em;
 }
-#app[data-v-7a77565d]{all:initial}#root_1[data-v-7a77565d]{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:left;color:#2c3e50;position:absolute;top:70px;right:0;z-index:100000;max-width:500px;padding:2px;background:gray;max-width:400px;max-height:calc(100vh - 70px);overflow:auto}@media(max-width: 420px){#root_1[data-v-7a77565d]{width:calc(100% - 3px)}}#root_1 #nav[data-v-7a77565d]{padding:5px;text-align:left;position:relative;padding-right:25px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#root_1 #nav span[data-v-7a77565d]{font-weight:bold;color:#2c3e50;cursor:pointer;display:inline-block;margin:3px}#root_1 #nav span.active[data-v-7a77565d]{color:#42b983}.error[data-v-7a77565d]{text-align:left;color:red}.curPlay[data-v-7a77565d]{position:fixed;right:10px;background:rgba(255,255,255,.9);color:green;padding:10px;top:0;z-index:100000}
+#app[data-v-02cf8d88]{all:initial}#root_1[data-v-02cf8d88]{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:left;color:#2c3e50;position:absolute;top:70px;right:0;z-index:100000;max-width:500px;padding:2px;background:gray;max-width:400px;max-height:calc(100vh - 70px);overflow:auto}@media(max-width: 420px){#root_1[data-v-02cf8d88]{width:calc(100% - 3px)}}#root_1 #nav[data-v-02cf8d88]{padding:5px;text-align:left;position:relative;padding-right:25px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#root_1 #nav span[data-v-02cf8d88]{font-weight:bold;color:#2c3e50;cursor:pointer;display:inline-block;margin:3px}#root_1 #nav span.active[data-v-02cf8d88]{color:#42b983}.error[data-v-02cf8d88]{text-align:left;color:red}.curPlay[data-v-02cf8d88]{position:fixed;right:10px;background:rgba(255,255,255,.9);color:green;padding:10px;top:0;z-index:100000}
 
-#root_1[data-v-7a77565d] input,
-#root_1[data-v-7a77565d] select {
+#root_1[data-v-02cf8d88] input,
+#root_1[data-v-02cf8d88] select {
   color: black !important;
 }
-.curPlay[data-v-7a77565d],
-#root_1[data-v-7a77565d] {
+.curPlay[data-v-02cf8d88],
+#root_1[data-v-02cf8d88] {
   font-size: 1.4em;
 }
-.sidebarsetting[data-v-7a77565d] {
+.sidebarsetting[data-v-02cf8d88] {
   position: fixed;
   max-width: 350px;
   top: 0;
@@ -1054,20 +1054,20 @@ table tr[data-v-5a4a6242]:nth-child(even) {
   transition: background-color 0.5s, opacity 0.5s, transform 0.3s ease;
   z-index: 11111;
 }
-.sidebarsetting.open[data-v-7a77565d] {
+.sidebarsetting.open[data-v-02cf8d88] {
   opacity: 1;
   visibility: visible;
   transform: translate(0) !important;
   transition: background-color 0.5s, opacity 0.25s,
     transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.viewMode.wlargeh[data-v-7a77565d] {
+.viewMode.wlargeh[data-v-02cf8d88] {
   transform: none;
   height: var(--doc-height);
   width: 100vw;
   margin-top: 0;
 }
-.viewMode[data-v-7a77565d] {
+.viewMode[data-v-02cf8d88] {
   position: absolute;
   transform: rotate(90deg);
   transform-origin: top left;
@@ -1087,54 +1087,56 @@ table tr[data-v-5a4a6242]:nth-child(even) {
   left: 0;
   background: black;
 }
-.videoview[data-v-7a77565d]{
+.videoview[data-v-02cf8d88]{
   position: relative;
   margin: auto;
+  width: 100%;
+height: var(--doc-height);
 }
-.viewMode .videoview[data-v-7a77565d]{
+.viewMode .videoview[data-v-02cf8d88]{
   max-width:min(calc(16 / 9 * 100vw), var(--doc-height));
     width: min(calc(16 / 9 * 100vw), 100vh);
     width:min(calc(16 / 9 * 100vw), var(--doc-height));
     height: 100vw;
 }
-.viewMode .text[data-v-7a77565d] {
+.viewMode .text[data-v-02cf8d88] {
   display: none;
 }
-.showCustCue[data-v-7a77565d] .vjs-text-track-display,.showCustCue[data-v-7a77565d] video::cue {
+.showCustCue[data-v-02cf8d88] .vjs-text-track-display,.showCustCue[data-v-02cf8d88] video::cue {
   display: none;
   font-size: 0;
 }
-.fs-1[data-v-7a77565d] .custCue,.fs-1[data-v-7a77565d] .text,.fs-1[data-v-7a77565d] .vjs-text-track-cue,.fs-1[data-v-7a77565d] video::-webkit-media-text-track-display  {
+.fs-1[data-v-02cf8d88] .custCue,.fs-1[data-v-02cf8d88] .text,.fs-1[data-v-02cf8d88] .vjs-text-track-cue,.fs-1[data-v-02cf8d88] video::-webkit-media-text-track-display  {
   font-size: 1em !important;
 }
-.fs-2[data-v-7a77565d] .custCue
-,.fs-2[data-v-7a77565d] .text,
-.fs-2[data-v-7a77565d] .vjs-text-track-cue 
-,.fs-2[data-v-7a77565d] video::-webkit-media-text-track-display {
+.fs-2[data-v-02cf8d88] .custCue
+,.fs-2[data-v-02cf8d88] .text,
+.fs-2[data-v-02cf8d88] .vjs-text-track-cue 
+,.fs-2[data-v-02cf8d88] video::-webkit-media-text-track-display {
   font-size: 1.5em !important;
 }
-.fs-3[data-v-7a77565d] .custCue,.fs-3[data-v-7a77565d] .text,.fs-3[data-v-7a77565d] .vjs-text-track-cue  ,.fs-3[data-v-7a77565d] video::-webkit-media-text-track-display{
+.fs-3[data-v-02cf8d88] .custCue,.fs-3[data-v-02cf8d88] .text,.fs-3[data-v-02cf8d88] .vjs-text-track-cue  ,.fs-3[data-v-02cf8d88] video::-webkit-media-text-track-display{
   font-size: 2em !important;
 }
-.fs-4[data-v-7a77565d] .custCue,.fs-4[data-v-7a77565d] .text,.fs-4[data-v-7a77565d] .vjs-text-track-cue ,.fs-4[data-v-7a77565d] video::-webkit-media-text-track-display  {
+.fs-4[data-v-02cf8d88] .custCue,.fs-4[data-v-02cf8d88] .text,.fs-4[data-v-02cf8d88] .vjs-text-track-cue ,.fs-4[data-v-02cf8d88] video::-webkit-media-text-track-display  {
   font-size: 2.25em !important;
 }
-.fs-5[data-v-7a77565d] .custCue,.fs-5[data-v-7a77565d] .text,.fs-5[data-v-7a77565d] .vjs-text-track-cue,.fs-5[data-v-7a77565d] video::-webkit-media-text-track-display {
+.fs-5[data-v-02cf8d88] .custCue,.fs-5[data-v-02cf8d88] .text,.fs-5[data-v-02cf8d88] .vjs-text-track-cue,.fs-5[data-v-02cf8d88] video::-webkit-media-text-track-display {
   font-size: 2.5em !important;
 }
-.custCue[data-v-7a77565d] video::cue {
+.custCue[data-v-02cf8d88] video::cue {
   visibility: hidden;
 }
-.viewMode[data-v-7a77565d] pbtn {
+.viewMode[data-v-02cf8d88] pbtn {
   visibility: hidden;
 }
-.viewMode.pause  .playbtn[data-v-7a77565d]{
+.viewMode.pause  .playbtn[data-v-02cf8d88]{
   display: block;
 }
-.viewMode.touchstart  .playbtn[data-v-7a77565d]{
+.viewMode.touchstart  .playbtn[data-v-02cf8d88]{
   display: block;
 }
-.playbtn[data-v-7a77565d]{
+.playbtn[data-v-02cf8d88]{
   display: none;
   position: fixed;
   font-size: 3em;
