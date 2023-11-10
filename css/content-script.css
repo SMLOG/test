@@ -144,33 +144,33 @@ select[data-v-5b92ada4] {
 }
 
 
-p[data-v-81a5fe96] {
+p[data-v-1eacb2d0] {
   font-size: 20px;
 }
-table tr[data-v-81a5fe96]:nth-child(odd) {
+table tr[data-v-1eacb2d0]:nth-child(odd) {
   background-color: #f5f5f5;
 }
-table tr[data-v-81a5fe96]:nth-child(even) {
+table tr[data-v-1eacb2d0]:nth-child(even) {
   background-color: #fff;
 }
-.ctrl[data-v-81a5fe96] {
+.ctrl[data-v-1eacb2d0] {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   cursor: pointer;
 }
-.ni[data-v-81a5fe96] {
+.ni[data-v-1eacb2d0] {
   color: gray;
 }
-.cached[data-v-81a5fe96] {
+.cached[data-v-1eacb2d0] {
   color: blue;
 }
-.cur[data-v-81a5fe96] {
+.cur[data-v-1eacb2d0] {
   color: red !important;
 }
-.list[data-v-81a5fe96] .src,
-.list[data-v-81a5fe96] .num {
+.list[data-v-1eacb2d0] .src,
+.list[data-v-1eacb2d0] .num {
   color: gray;
   font-size: 0.8em;
   display: inline-block;
@@ -178,20 +178,20 @@ table tr[data-v-81a5fe96]:nth-child(even) {
   cursor: pointer;
   padding-left: 5px;
 }
-._d .ni[data-v-81a5fe96] {
+._d .ni[data-v-1eacb2d0] {
   color: blue;
 }
-._d.ni.cur[data-v-81a5fe96] {
+._d.ni.cur[data-v-1eacb2d0] {
   color: orangered !important;
 }
-._c .ni[data-v-81a5fe96] {
+._c .ni[data-v-1eacb2d0] {
   color: green;
 }
-.result[data-v-81a5fe96] {
+.result[data-v-1eacb2d0] {
   padding: 5px;
   background: white;
 }
-.del[data-v-81a5fe96] {
+.del[data-v-1eacb2d0] {
   color: red;
   font-size: 0.8em;
   display: inline-block;
@@ -199,7 +199,7 @@ table tr[data-v-81a5fe96]:nth-child(even) {
   cursor: pointer;
   padding-left: 5px;
 }
-.a-upload[data-v-81a5fe96] {
+.a-upload[data-v-1eacb2d0] {
   padding: 4px 10px;
   height: 20px;
   line-height: 20px;
@@ -211,14 +211,14 @@ table tr[data-v-81a5fe96]:nth-child(even) {
   overflow: hidden;
   display: inline-block;
 }
-.a-upload input[data-v-81a5fe96] {
+.a-upload input[data-v-1eacb2d0] {
   position: absolute;
   right: 0;
   top: 0;
   opacity: 0;
   cursor: pointer;
 }
-.a-upload[data-v-81a5fe96]:hover {
+.a-upload[data-v-1eacb2d0]:hover {
   color: #444;
   background: #eee;
   border-color: #ccc;
