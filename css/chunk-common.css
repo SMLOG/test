@@ -1,14 +1,14 @@
 
-p[data-v-6bdea402] {
+p[data-v-365c8f06] {
   font-size: 20px;
 }
-table tr[data-v-6bdea402]:nth-child(odd) {
+table tr[data-v-365c8f06]:nth-child(odd) {
   background-color: #f5f5f5;
 }
-table tr[data-v-6bdea402]:nth-child(even) {
+table tr[data-v-365c8f06]:nth-child(even) {
   background-color: #fff;
 }
-.floatTop2[data-v-6bdea402] {
+.floatTop2[data-v-365c8f06] {
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -19,42 +19,41 @@ table tr[data-v-6bdea402]:nth-child(even) {
   color: white;
   padding-left: 3px;
 }
-.newword[data-v-6bdea402] {
+.newword[data-v-365c8f06] {
   width: 4em;
   /* font-size: 80%; */
   vertical-align: top;
 }
-.src[data-v-6bdea402] {
+.src[data-v-365c8f06] {
   color: gray;
   font-size: 0.8em;
   flex-grow: 0;
   margin-left: 5px;
-  margin-right: 5px;
   cursor: pointer;
-  position: absolute;
   right: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.row[data-v-6bdea402] {
+.row[data-v-365c8f06] {
   position: relative;
   text-align: left;
   margin: 0 !important;
-  padding-right: 30px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-.wrap .row[data-v-6bdea402]:nth-child(even) {
+.wrap .row[data-v-365c8f06]:nth-child(even) {
   background-color: #f4f4f4;
 }
-b[data-v-6bdea402] {
+b[data-v-365c8f06] {
   font-weight: bold;
 }
-.cur[data-v-6bdea402] {
+.cur[data-v-365c8f06] {
   font-weight: bold;
 }
-.to[data-v-6bdea402] {
+.to[data-v-365c8f06] {
   cursor: pointer;
   width: 100%;
   display: inline-block;
