@@ -1,0 +1,10 @@
+let i=0;
+function hide(){
+  $('.bili-header,#biliMainHeader,#navigator,#navigator-fixed,.to-top,.playlist-container,.watch-later').remove();
+$('#app .h,.bpx-player-top-wrap,#viewbox_report,#biliMainHeader,iframe,.right-container,.bpx-player-top-left-follow,.left-container-under-player,#arc_toolbar_report,.bpx-player-sending-bar').remove();
+ $('.video-container-v1').css('max-width','auto').css('max-height','auto').css('min-width','auto');
+  if(i<5)setTimeout(hide, 3000);
+  i++;
+}
+hide();
+
