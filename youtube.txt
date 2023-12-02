@@ -1,0 +1,53 @@
+
+function clean(){
+  $('ytd-guide-section-renderer').each(function(){
+    let html = $(this).html();
+    (html.indexOf('Gaming')>-1 || html.indexOf('More from YouTube')>-1) && $(this).remove();
+
+  });
+
+
+
+  $('ytd-rich-item-renderer,ytd-compact-video-renderer,ytd-rich-grid-renderer').each(function(){
+
+    $(this).html().toLowerCase().indexOf('kid')==-1&& $(this).remove();
+  });
+  $('ytd-metadata-row-container-renderer').remove();
+if(location.href.toLowerCase().indexOf('gaming')>-1
+||location.href.indexOf('/watch?v=')>-1 && $('.ytd-watch-metadata').html() && $('.ytd-watch-metadata').html().toLowerCase().indexOf('kid')==-1
+)location.href='https://www.youtube.com/';
+
+
+  $('ytd-reel-shelf-renderer,ytd-rich-shelf-renderer').each(function(){
+    $(this).html().indexOf('Short')>-1&&$(this).remove();
+  });
+  setTimeout(clean, 3000);
+}
+
+clean();
+
+
+
+========
+
+set MyApps to {"Google Chrome"}
+
+repeat with MyApp in MyApps
+
+	tell application MyApp
+
+		activate
+
+		delay 3
+
+		tell application "System Events" to tell process MyApp
+
+			set value of attribute "AXFullScreen" of window 1 to true
+
+		end tell
+
+	end tell
+
+end repeat
+
+
