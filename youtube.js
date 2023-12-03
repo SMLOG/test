@@ -1,3 +1,7 @@
+/*
+ https://code.jquery.com/jquery-3.7.1.slim.min.js
+https://smlog.github.io/test/youtube.js
+ */
 function clean() {
   $("ytd-guide-section-renderer").each(function () {
     let html = $(this).html();
