@@ -12,19 +12,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "css/chunk-vendors.css?_hash=709554a7"
   },
   {
-    "revision": "a60fb2865eeb1c2b126b",
-    "url": "css/content-script.css?_hash=a9e5bf29"
+    "revision": "e51c12031a570c101d76",
+    "url": "css/content-script.css?_hash=dcc10083"
   },
   {
-    "revision": "2a93aa6dfcbe94f7bdc2",
-    "url": "css/index.css?_hash=8e24409d"
+    "revision": "a20ad35510e7d6d25d07",
+    "url": "css/index.css?_hash=a4835edf"
   },
   {
     "revision": "1ba2ae710d927f13d483fd5d1e548c9b",
     "url": "favicon.ico"
   },
   {
-    "revision": "f5346abef1ce0ccda052843dbeefdf0e",
+    "revision": "4834b7408d693c551af9e4b0537d231c",
     "url": "index.html"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/chunk-vendors.js?_hash=c1a7912e"
   },
   {
-    "revision": "2a93aa6dfcbe94f7bdc2",
-    "url": "js/index.js?_hash=c39cd296"
+    "revision": "a20ad35510e7d6d25d07",
+    "url": "js/index.js?_hash=e4005473"
   },
   {
     "revision": "96acefa3be0d6d6033a0e5c717bf1ba5",
