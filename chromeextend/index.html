@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" />
+  <meta http-equiv="Cache-Control" content="public" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta content="no-referrer" name="referrer" />
+  <script type="text/javascript">window.chrome = {};</script>
+  <title>
+    Main
+  </title>
+  <script>
+    /* 判断当前浏览器是否支持serviceWorker */
+    //'development' != 'production' &&
+    if (false && 'serviceWorker' in navigator) {
+      /* 当页面加载完成就创建一个serviceWorker */
+      window.addEventListener('load', function () {
+        /* 创建并指定对应的执行内容 */
+        /* scope 参数是可选的，可以用来指定你想让 service worker 控制的内容的子目录。 在这个例子里，我们指定了 '/'，表示 根网域下的所有内容。这也是默认值。 */
+        //navigator.serviceWorker.register('./sw.js', { scope: './' })
+        navigator.serviceWorker.register('./service-worker.debug.js', { scope: './' })
+          .then(function (registration) {
+
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            document.title = 'ready'
+          })
+          .catch(function (err) {
+
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+
+<link href="css/chunk-common.css" rel="preload" as="style"><link href="css/chunk-vendors.css" rel="preload" as="style"><link href="css/index.css" rel="preload" as="style"><link href="js/chunk-common.js" rel="preload" as="script"><link href="js/chunk-vendors.js" rel="preload" as="script"><link href="js/index.js" rel="preload" as="script"><link href="css/chunk-vendors.css" rel="stylesheet"><link href="css/chunk-common.css" rel="stylesheet"><link href="css/index.css" rel="stylesheet"></head>
+
+<body style="margin:0;">
+
+  <noscript>
+    <strong>We're sorry but Main doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+  </noscript>
+  <div id="mytranslate_app"></div>
+  <!-- built files will be 
+       injected -->
+
+  </div>
+<script type="text/javascript" src="js/chunk-vendors.js"></script><script type="text/javascript" src="js/chunk-common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+
+
+</html>
