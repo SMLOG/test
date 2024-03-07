@@ -14,14 +14,6 @@ html, body {
   overflow: hidden;
   font-size: 100%!important;
 }
-.disable-select {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, supported by most modern browsers */
-}
 button{
   font-size: 200%;
 }
@@ -31,12 +23,7 @@ button{
     left: 0;
     right: 0;
     height: 20px;}
-#container{
-  position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;}
+#container{width: 100vw;height: 100vh;overflow: hidden;;}
 canvas {
   height: 100%;
   width: 100%;
@@ -53,11 +40,10 @@ canvas {
     z-index: 1;}
 </style>
 </head>
-<body class="disable-select">
+<body>
 <div id="container">
   <canvas id="canvasbg" ></canvas>
   <canvas id="canvas" style="z-index: 1;" ></canvas>
-  
 </div>
 
 <div id="bts" style="width:100%;">

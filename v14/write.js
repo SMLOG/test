@@ -79,7 +79,6 @@ function startDrawing(event) {
 
   ctx.moveTo(offsetX, offsetY);
   recordedData.push({ x: offsetX, y: offsetY, t: -1 });
-  event.stopPropagation();
 }
 
 function stopDrawing() {
